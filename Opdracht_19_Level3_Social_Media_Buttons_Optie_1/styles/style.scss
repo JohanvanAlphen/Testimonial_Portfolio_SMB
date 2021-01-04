@@ -1,0 +1,59 @@
+$clr-blog: #e17b77;
+$clr-facebook: #3b5998;
+$clr-twitter:  #00aced;
+$clr-github: #333;
+$clr-linkedin:#007bb6;
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Trebuchet MS', sans-serif;
+  overflow: hidden;
+}
+
+.container{
+  position: absolute;
+  right: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(260px, 0);
+  a {
+    font-size: 20px;
+    color: white;
+    display: block;
+    width: 300px;
+    text-align: left;
+    transition: 1s;
+    transition-property: transform;
+    
+    &:hover {
+    transform: translate(-250px, 0);
+    }
+  }
+  i {
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    width: 30px;
+  }
+  &__blog {
+    background-color:$clr-blog;
+  }
+  &__facebook {
+    background-color: $clr-facebook;
+  }
+  &__twitter {
+    background-color: $clr-twitter;
+  }
+  &__github {
+      background-color: $clr-github;
+  }
+  &__linkedin {
+    background-color: $clr-linkedin;
+  }
+}
+
+                           

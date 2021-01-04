@@ -1,0 +1,84 @@
+$clr-blog: #e17b77;
+$clr-facebook: #3b5998;
+$clr-twitter:  #00aced;
+$clr-github: #333;
+$clr-linkedin:#007bb6;
+
+body {
+
+padding: 0;
+margin: 0;
+background-color: aqua;
+font-family: 'Trebuchet MS', sans-serif;
+overflow: hidden;
+}
+
+.container{
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(260px, 0);
+    a {
+      font-size: 20px;
+      color: white;
+      display: block;
+      width: 300px;
+      text-align: left;
+      transition: 1s;
+      transition-property: transform;
+      
+      &:hover {
+      transform: translate(-220px, 0);
+      }
+      &::before{
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 600;
+        margin: 10px 20px 10px 10px;
+        }
+    }
+    i {
+      text-align: center;
+      margin: 10px;
+      font-size: 30px;
+      width: 30px;
+    }
+    &__blog {
+      background-color: $clr-blog;
+      &::before {
+        content: "\f368"; 
+        //laptop-icon werkt niet, rolstoel-icon gebruikt//
+        }
+    }
+    &__facebook {
+      background-color: $clr-facebook;
+      &::before{
+        content: "\f39e"; 
+        }
+    }
+    &__twitter {
+      background-color: $clr-twitter;
+      &::before{
+        content: "\f099";
+        }
+    }
+    &__github {
+        background-color: $clr-github;
+        &::before{
+            content: "\f09b"; 
+        }
+    }
+    &__linkedin {
+      background-color: $clr-linkedin;
+      &::before{
+        content: "\f0e1"; 
+        }
+    }
+  }
+
